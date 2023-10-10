@@ -1,0 +1,20 @@
+$grey: #A0A0A0;
+
+.CurrentBalance {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 160px;
+  margin: auto;
+
+  .balance {
+    font-size: 40px;
+  }
+
+  > h2 {
+    margin: 0;
+    color: $grey;
+  }
+}

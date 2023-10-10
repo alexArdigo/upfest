@@ -1,0 +1,68 @@
+$bg-grey: #323232;
+
+.ListMovementTopUp, .ListMovementSpent {
+  background-color: $bg-grey;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  .gradient-to-left {
+    z-index: 1;
+  }
+
+  .bg-mask {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 60px;
+    height: 60px;
+    z-index: 2;
+
+    .card_large {
+      position: absolute;
+    }
+  }
+
+  .info-container-3 {
+    z-index: 2;
+  }
+
+  .bg-circle-small {
+    right: 20px;
+    z-index: 2;
+  }
+
+  .box-bg-principal {
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+  }
+}
+
+.ListMovementTopUp {
+  margin-bottom: 20px;
+}
+
+.ListMovementSpent {
+  margin-bottom: 10px;
+}
+
+.ListMovementSpentBox {
+  background-color: $bg-grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70vw;
+  height: 35px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-bottom: 20px;
+
+  span:last-of-type {
+    font-size: 14px;
+  }
+}

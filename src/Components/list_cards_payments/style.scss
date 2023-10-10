@@ -1,0 +1,75 @@
+$bg-grey: #323232;
+
+.ListPaymentComplete, .ListPaymentPending {
+  background-color: $bg-grey;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  margin-bottom: 10px;
+
+  .gradient-to-left {
+    z-index: 1;
+  }
+
+  .bg-mask {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 80px;
+    height: 80px;
+    z-index: 2;
+
+    .card_large {
+      position: absolute;
+    }
+  }
+
+  .info-container-3 {
+    z-index: 2;
+  }
+
+  .bg-circle-small {
+    right: 20px;
+    z-index: 2;
+  }
+
+  .box-bg-principal {
+    position: absolute;
+    right: 20px;
+    z-index: 2;
+  }
+}
+
+.Payment-ref-box {
+  background-color: $bg-grey;
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 120px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  align-content: center;
+
+  div {
+    width: 50%;
+
+    &:nth-child(odd) {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-weight: 800;
+      padding: 4px 0 4px 28px;
+    }
+
+    &:nth-child(even) {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 4px 30px 4px 0;
+    }
+  }
+}
